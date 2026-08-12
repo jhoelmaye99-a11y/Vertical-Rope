@@ -1,0 +1,170 @@
+/* Paleta de colores */
+:root {
+  --primary-green: #315E1A;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+/* Forzar color negro en todos los links de la navbar */
+.navbar-light .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+/* Forzar color negro en la marca (nombre/logo) */
+.navbar-light .navbar-brand {
+  color: #000 !important;
+}
+
+/* Opcional: hover verde corporativo */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #315E1A !important;
+}
+
+
+/* Estilos generales del carrito */
+#lista-carrito {
+  margin-top: 20px;
+}
+
+#lista-carrito table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#lista-carrito th {
+  background-color: #315E1A;
+  color: #fff;
+  text-align: center;
+}
+
+#lista-carrito td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Botón eliminar */
+#lista-carrito .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  transition: 0.3s;
+}
+
+#lista-carrito .btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+/* Total */
+#lista-carrito h5 {
+  text-align: right;
+  font-weight: bold;
+  color: #315E1A;
+  margin-top: 15px;
+}
+
+
+
+.container {
+  max-width: 98%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* Tipografías */
+body {
+  font-family: 'Canva Sans', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+.carousel-caption h3 {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+h1, h2, h4 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--primary-green);
+  font-weight: 700;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu {
+  background-color: #FFFFFF; /* Fondo blanco */
+  border: 2px solid #315E1A; /* Borde verde */
+}
+
+.dropdown-item {
+  color: #000000;
+  font-family: 'Canva Sans', sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: #315E1A;
+  color: #FFFFFF;
+}
+
+.contact-info {
+  background-color: #315E1A;   /* Verde corporativo */
+  color: #FFFFFF;              /* Texto blanco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.contact-info h4 {
+  font-family: 'League Spartan', sans-serif;
+}
+.contact-info p {
+  font-family: 'Canva Sans', sans-serif;
+}
+
+
+/* Header y navegación */
+.navbar {
+  background-color: var(--primary-green);
+}
+.navbar a {
+  color: var(--black);
+  font-family: 'League Spartan', sans-serif;
+}
+.navbar a:hover {
+  color: var(--black);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: var(--white);
+  font-family: 'League Spartan', sans-serif;
+}
+.btn-primary:hover {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+/* Tarjetas de categorías */
+.card {
+  border: 2px solid var(--primary-green);
+  border-radius: 8px;
+}
+.card-title {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--black);
+}
+.card-body {
+  font-family: 'Canva Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: var(--white);
+}
+footer a:hover {
+  color: var(--black);
+}

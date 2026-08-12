@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Vertical Rope</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+     <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <img src="image/logo principal.png" alt="" height="100px">
+                <a class="navbar-brand" href="index.html"><h2>Vertical Rope</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactanos.html">Contactanos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="arborismo.html">Arborismo</a></li>
+                                <li><a class="dropdown-item" href="proteccion_personal.html">Proteccion Personal</a></li>
+                                <li><a class="dropdown-item" href="rescate_emergencias.html">Rescate y Emergencias</a></li>
+                                <li><a class="dropdown-item" href="sistemas_ingenieria.html">Sitemas de Ingenieria</a></li>
+                                <li><a class="dropdown-item" href="trabajo_alturas.html">Trabajo en Alturas</a></li>
+                            </ul>
+                        </li>
+                        <!-- Dropdown Línea de Productos -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProductos" 
+                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Línea de Productos
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownProductos">
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Arnés</a></li>
+                            <li><a class="dropdown-item" href="#">Ascendedores</a></li>
+                            <li><a class="dropdown-item" href="#">Autorretractiles</a></li>
+                            <li><a class="dropdown-item" href="#">Bloqueadores y arrestadores</a></li>
+                            <li><a class="dropdown-item" href="#">Cascos e iluminación</a></li>
+                            <li><a class="dropdown-item" href="#">Conectores</a></li>
+                            <li><a class="dropdown-item" href="#">Cuerdas y cordinos</a></li>
+                            <li><a class="dropdown-item" href="#">Descensores</a></li>
+                            <li><a class="dropdown-item" href="#">Eslingas</a></li>
+                            <li><a class="dropdown-item" href="#">Kits de rescate</a></li>
+                            <li><a class="dropdown-item" href="#">Líneas de vida</a></li>
+                            <li><a class="dropdown-item" href="#">Poleas</a></li>
+                            <li><a class="dropdown-item" href="#">Protección auditiva</a></li>
+                            <li><a class="dropdown-item" href="#">Protección corporal</a></li>
+                            <li><a class="dropdown-item" href="#">Protección facial</a></li>
+                            <li><a class="dropdown-item" href="#">Protección manual</a></li>
+                            <li><a class="dropdown-item" href="#">Protección respiratoria</a></li>
+                            <li><a class="dropdown-item" href="#">Protección visual</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="carrito.html" class="btn btn-outline-dark">
+                          <i class="bi-cart-fill me-1"></i>
+                             Carrito
+                             <span id="cart-count" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+ <!-- Sección de productos con filtros -->
+<section class="py-5">
+  <div class="container">
+    <!-- Encabezado del catálogo -->
+    <header class="py-5" style="background: linear-gradient(90deg, #315E1A 0%, #000000 100%);">
+      <div class="container text-center">
+        <h1 class="fw-bold text-white" style= "font-family:'League Spartan', sans-serif;">
+        Productos de Proteccion Personal
+        </h1>
+      </div>
+    </header>
+
+    <div class="row mt-4">
+      <!-- Sidebar de filtros -->
+      <div class="col-md-3">
+        <div class="p-3 border rounded" style="background-color:#f8f9fa;">
+          <h5 style="color:#315E1A;">Filtrar productos</h5>
+
+          <!-- Filtro por precio -->
+          <label class="form-label mt-3">Precio</label>
+          <input type="number" class="form-control mb-2" placeholder="Mínimo">
+          <input type="number" class="form-control mb-2" placeholder="Máximo">
+
+          <!-- Filtro por categoría -->
+          <label class="form-label mt-3">Categoría</label>
+          <select class="form-select mb-2">
+            <option>Todos</option>
+            <option>Arneses</option>
+            <option>Protección visual</option>
+            <option>Accesorios</option>
+            <option>Ascendedores</option>
+            <option>Autorretractiles</option>
+            <option>Bloqueadores y arrestadores</option>
+            <option>Cascos e iluminación</option>
+            <option>Conectores</option>
+            <option>Cuerdas y cordinos</option>
+            <option>Descensores</option>
+            <option>Eslingas</option>
+            <option>Kits de rescate</option>
+            <option>Líneas de vida</option>
+            <option>Poleas</option>
+            <option>Protección auditiva</option>
+            <option>Protección corporal</option>
+            <option>Protección facial</option>
+            <option>Protección manual</option>
+            <option>Protección respiratoria</option>
+            <option>Protección visual</option>
+          </select>
+
+          <!-- Filtro por valoración -->
+          <label class="form-label mt-3">Valoración</label>
+          <div>
+            <input type="checkbox" id="4stars"> <label for="4stars">4+ estrellas</label><br>
+            <input type="checkbox" id="5stars"> <label for="5stars">5 estrellas</label>
+          </div>
+
+          <!-- Botón aplicar -->
+          <button class="btn btn-primary mt-3 w-100" style="background-color:#315E1A; border-color:#315E1A;">
+            Aplicar filtros
+          </button>
+        </div>
+      </div>
+
+      <!-- Catálogo de productos -->
+      <div class="col-md-9">
+        <div class="row">
+
+          <!-- Producto 1 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Popular Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  $40.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 40000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+          <!-- Producto 1 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Popular Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  $40.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 40000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+          <!-- Producto 1 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#"  onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#"  onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Popular Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  $40.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#"  onclick="agregarAlCarrito('Special Itemt', 40000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+
+          <!-- Producto 1 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Special Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <span class="text-muted text-decoration-line-through">$20.000</span>
+                  $18.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 18000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="Producto" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Popular Item</h5>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  $40.000
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#" onclick="agregarAlCarrito('Special Itemt', 40000)">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repite más productos aquí -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color:#315E1A;">
+  <div class="container text-center text-white">
+    <p>Horario: Lunes a Viernes 8:00 am a 6:00 pm</p>
+    <p>Tel: 315 288 0833 | 317 655 2080</p>
+    <a href="https://www.instagram.com/jhoelytrigs-Vhjq6vhdWsAbDz" class="text-white mx-2" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="#" class="text-white mx-2" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="#" class="text-white mx-2" target="_blank" rel="noopener noreferrer">TikTok</a>
+  </div>
+</footer>
+
+<!-- Bootstrap core JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS -->
+<script src="js/scripts.js"></script>
+<script src="js/carrito.js"></script>
+
+</body>
+</html>
