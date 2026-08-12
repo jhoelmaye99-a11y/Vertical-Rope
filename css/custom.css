@@ -10,6 +10,17 @@
   font-family: 'League Spartan', sans-serif !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Spartan', sans-serif !important;
+  font-weight: 600; /* más grueso para títulos */
+}
+
+p, label, input, textarea, button {
+  font-family: 'League Spartan', sans-serif !important;
+  font-weight: 400; /* más ligero para textos normales */
+}
+
+
 
 /* Forzar color negro en todos los links de la navbar */
 .navbar-light .navbar-nav .nav-link {
